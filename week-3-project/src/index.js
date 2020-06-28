@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import {ContactForm, FruitForm, MathForm} from "./forms";
+import {ContactForm as ContactFormHooks, FruitForm as FruitFormHooks, MathForm as MathFormHooks} from "./forms_with_hooks";
 import {InteractivePokedex, Pokedex} from "./api";
 import {InteractivePokedex as InteractivePokedexHooks, Pokedex as PokedexHooks} from "./api_with_hooks";
-import {ContactForm, FruitForm, MathForm} from "./forms";
 
 const App = () => {
     return (
@@ -22,6 +23,20 @@ const App = () => {
 
                 <h3>Fruit Form</h3>
                 <FruitForm/>
+            </section>
+
+            <section className="app_goal">
+                <h2>Forms</h2>
+                <h3>With hooks</h3>
+
+                <h3>Contact Form</h3>
+                <ContactFormHooks/>
+
+                <h3>Math Form</h3>
+                <MathFormHooks/>
+
+                <h3>Fruit Form</h3>
+                <FruitFormHooks/>
             </section>
 
             <section className="app_goal">
