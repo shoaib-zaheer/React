@@ -21,9 +21,7 @@ class Pokedex extends React.Component {
 
         fetchPokemons()
             .then((pokemons) => {
-                this.setState({
-                    pokemons
-                })
+                // Set the state here
             });
     }
 
@@ -76,9 +74,7 @@ class InteractivePokedex extends React.Component {
 
         fetchPokemons()
             .then((pokemons) => {
-                this.setState({
-                    pokemons
-                })
+                // Set the state here
             });
     }
 
